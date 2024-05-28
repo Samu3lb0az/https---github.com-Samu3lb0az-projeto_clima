@@ -41,7 +41,7 @@ a {
      align-items: center;
        justify-content: center;
        flex-direction: column;
-    background: url(../imgs/img_ceu.jpg) no-repeat center center fixed;
+    background: url(./imgs/img_ceu.jpg) no-repeat center center fixed;
     background-size: cover;
        color: black;
 }
