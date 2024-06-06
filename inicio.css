@@ -36,14 +36,17 @@ a {
 #logo_nav{
     width: 150px;
 }
-#contexto{
-    height: 100vh;
-     align-items: center;
-       justify-content: center;
-       flex-direction: column;
+#contexto {
+    min-height: 100vh;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-top: 10vh; 
     background: url(./imgs/img_ceu.jpg) no-repeat center center fixed;
     background-size: cover;
-       color: black;
+    color: black;
 }
 h1{
     position: static;
@@ -55,16 +58,14 @@ h1{
     font-size: 50px;
     cursor: pointer;
 }
-h2{
-    display: inline-flex;
-    position: static;
+h2 {
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 8px;
-    margin-left: 34%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 70px;
     cursor: pointer;
+    margin-top: 20px; 
 }
 .esquerda{
     color: red;
@@ -88,12 +89,18 @@ h2:hover .direita{
     border: 2px solid black;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 38%;
+    margin-top: 20px; 
     margin-bottom: 200px;
     border-radius: 10px;
     background-color: whitesmoke;
+    display: inline-block;
 }
-#botao{
-    margin-top: -290px;
 
+#botao {
+    position: absolute;
+    top: calc(50% + 100px); 
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+
