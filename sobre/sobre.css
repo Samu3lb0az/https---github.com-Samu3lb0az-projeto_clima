@@ -12,6 +12,7 @@ header {
     position: sticky;
     left: 0;
     top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -47,7 +48,6 @@ a {
 }
 
 body {
-    height: 100vh;
     background: linear-gradient(to right, rgb(236, 55, 55), rgb(62, 62, 209));
     margin: 0;
     font-family: Arial, sans-serif;
@@ -55,26 +55,84 @@ body {
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    text-align: center;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    margin-top: 10px;
+}
+
+/* Ajustando os h1 individualmente */
+.titulo-sobre {
+    margin-top: -10px; /* Ajuste este valor conforme necessário */
+}
+
+.titulo-missao {
+    margin-top: -20px; /* Ajuste este valor conforme necessário */
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 23px;
-    margin-left: 570px;
-    margin-top: -240px;
     letter-spacing: 2px;
+    margin: 20px;
 }
 
 #logo {
     width: 400px;
     height: auto;
-    margin-left: 100px;
-    margin-top: 40px;
+    margin-left: 20px;
 }
+
+.secoes {
+    width: 100%;
+}
+
+.secao1, .secao2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.secao1 .content, .secao2 .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.secao1 img, .secao2 img {
+    width: 400px;
+    height: auto;
+}
+
+.secao1 img {
+    margin-left: 60px;
+}
+
+.secao2 img {
+    margin-left: 20px;
+    margin-right: 40px; 
+}
+
+.secao1 p, .secao2 p {
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+footer{
+    width: 100%;
+    height: 90px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ 
