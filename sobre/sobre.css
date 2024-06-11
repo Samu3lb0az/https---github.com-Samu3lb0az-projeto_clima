@@ -62,13 +62,12 @@ h1 {
     margin-top: 10px;
 }
 
-/* Ajustando os h1 individualmente */
 .titulo-sobre {
-    margin-top: -10px; /* Ajuste este valor conforme necessário */
+    margin-top: -90px; 
 }
 
 .titulo-missao {
-    margin-top: -20px; /* Ajuste este valor conforme necessário */
+    margin-top: -90px; 
 }
 
 p {
