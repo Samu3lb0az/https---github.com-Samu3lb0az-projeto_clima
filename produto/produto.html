@@ -21,16 +21,28 @@
     </header>
 
     <section class="primeira">
-        <h1>Produto</h1>
-        <img id="img1" src="../imgs/1img_3d.jpeg" alt="Imagem 1 3D">
-        <img id="img2" src="../imgs/2img_3d.jpeg" alt="Imagem 2 3D">
-        <p id="text1">Print do nosso projeto 3D, que nada mais é <br> como ele ficaria na vida real, sendo essa apenas a <br> carcaça pronta para impressão.</p>
+        <div class="container">
+            <div class="image-gallery">
+                <h1>Modelo Tridimensional do Projeto</h1>
+                <div class="container">
+                    <div class="image-gallery">
+                        
+                        <div class="main-image">
+                            <img id="mainImage" src="../imgs/2img_3d.jpeg" alt="Imagem Principal">
+                        </div>
+                        <div class="thumbnails">
+                            <img src="../imgs/1img_3d.jpeg" alt="Miniatura 1" onclick="document.getElementById('mainImage').src='../imgs/1img_3d.jpeg'">
+                            <img src="../imgs/2img_3d.jpeg" alt="Miniatura 2" onclick="document.getElementById('mainImage').src='../imgs/2img_3d.jpeg'">
+                            <img src="../imgs/img_arduino.png" alt="Miniatura 2" onclick="document.getElementById('mainImage').src='../imgs/img_arduino.png'">
+                           
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>Apresentamos o modelo tridimensional do nosso projeto, uma representação fiel de como o produto se manifestaria na vida real. Esta imagem ilustra a carcaça pronta para impressão, exibindo todos os detalhes necessários para a fabricação. A estrutura foi meticulosamente projetada para garantir precisão e funcionalidade, refletindo a qualidade e a atenção aos detalhes que caracterizam o nosso trabalho.</p>
+                    </div>
+                </div>
     </section>
-    <section class="segunda">
-        <h1>Produto</h1>
-        <img id="img3" src="../imgs/img_arduino.png" alt="Imagem arduino">
-        <p id="text2">Print do circuito arduino, feito no Tinkercad.</p>
-    </section>
+
 
     <footer>
         <ul>Contatos:</ul>
